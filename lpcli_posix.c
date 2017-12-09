@@ -25,7 +25,7 @@ int lpcli_clipboardcopy(const char *text)
 	{
 		return LPCLI_FAIL;
 	}
-	fprintf(pout, text);
+	fprintf(pout, "%s", text);
 	fflush(pout);
 	pclose(pout);
 	
